@@ -23,6 +23,7 @@ client.connect(async (err) => {
 });
 
 app.set('view engine', 'ejs');
+
 app.use(express.static(__dirname + '/static'));
 app.use(expressLayouts)
 
