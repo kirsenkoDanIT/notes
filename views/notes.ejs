@@ -1,0 +1,23 @@
+<div class="container min-vh-100 d-flex flex-column bg-light border border-primary position-relative">
+    <article class=" w-100 text-center link-block">
+        <a href="/" class="btn btn-success w-100 fixed-top">Home</a>
+    </article>
+    <h1>Notes</h1>
+    <% newNotes.forEach(item=> {%>
+
+    <div class="card  border border-primary my-1">
+
+        <div class="card-body">
+            <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="card-title"><%=item.title%></h5>
+            <p class="card-text"><%=item.body%></p> <a href="#" class="btn btn-primary">View</a>
+        </div>
+    </div>
+    <% })%>
+    <article class=" w-100 text-center link-block">
+        <a href="/create_notes" class="btn btn-primary w-100 fixed-bottom">New note</a>
+    </article>
+
+</div>

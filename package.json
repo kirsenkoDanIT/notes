@@ -1,0 +1,31 @@
+{
+  "name": "notes_mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env PORT=3000 node index",
+    "dev": "cross-env PORT=3000 nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-dollar-sign": "^1.0.2",
+    "eslint-plugin-jquery": "^1.5.1",
+    "eslint-plugin-node": "^9.1.0",
+    "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongodb": "^3.3.0-beta2"
+  }
+}
