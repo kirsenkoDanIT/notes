@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const config = require('./config')
 const expressLayouts = require('express-ejs-layouts');
 const app = express()
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended: true
